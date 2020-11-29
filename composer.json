@@ -1,0 +1,38 @@
+{
+    "name": "tperrelli/seostack",
+    "description": "Tiago Perrelli SEO Package",
+    "type": "package",
+    "require": {
+        "illuminate/support": "^7.28",
+        "illuminate/http": "^7.28"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tperrelli\\SeoStack\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tperrelli\\SeoStack\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tiago Perrelli",
+            "email": "tiagoyg@gmail.com",
+            "homepage": "http://tiagoperrelli.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tperrelli\\SeoStack\\Providers\\AppServiceProvider"
+            ]
+        }
+    }
+}
