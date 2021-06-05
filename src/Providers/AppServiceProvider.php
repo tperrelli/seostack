@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->loadConfigs();
 
+        $this->loadRoutes();
+
         $this->loadMigrations();
 
         $this->loadViews();
@@ -45,6 +47,11 @@ class AppServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../config/seostack.php' => config_path('seostack.php')
         ]);
+    }
+
+    protected function loadRoutes()
+    {
+        $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
     }
 
     protected function loadMigrations()

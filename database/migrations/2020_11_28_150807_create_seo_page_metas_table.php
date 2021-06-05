@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSeoPageImagesTable extends Migration
+class CreateSeoPageMetasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSeoPageImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('seo_page_images', function (Blueprint $table) {
+        Schema::create('seo_page_metas', function (Blueprint $table) {
             $table->id();
             $table->string('title', 150);
             $table->string('caption', 255);
@@ -33,6 +33,6 @@ class CreateSeoPageImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('seo_page_images');
+        Schema::dropIfExists('seo_page_metas');
     }
 }

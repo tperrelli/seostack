@@ -15,6 +15,15 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="seo_url" class="control-label">{{ __('SEO Slug') }}</label>
+                        <input type="text" name="seo_url" class="form-control" value="{{ old('seo_url') }}" />
+                    </div>
+                </div>
+            </div>
+
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#seo-tab-1">General Options</a>

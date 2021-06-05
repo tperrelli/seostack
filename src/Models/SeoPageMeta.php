@@ -5,7 +5,7 @@ namespace Tperrelli\SeoStack\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class SeoPageImage extends Model
+class SeoPageMeta extends Model
 {
     use SoftDeletes;
     
@@ -18,8 +18,8 @@ class SeoPageImage extends Model
         'title', 'caption', 'src', 'type', 'seo_page_id'
     ];
 
-    public function seoThing()
+    public function seoPage()
     {
-        return $this->belongsTo(SeoThing::class);
+        return $this->belongsTo(SeoPage::class);
     }
 }
